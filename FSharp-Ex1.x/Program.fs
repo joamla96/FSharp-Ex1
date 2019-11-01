@@ -27,7 +27,8 @@ let rec f = function
 let rec fib = function
     | 0 -> 0
     | 1 -> 1
-    | n -> fib(n-1) + fib(n-2)
+    | n when n > 1 -> fib(n-1) + fib(n-2)
+    | _ -> -1
     
 // Ex 1.6
 let rec sum = function
