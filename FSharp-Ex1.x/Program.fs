@@ -20,7 +20,8 @@ let hf = function
 // Ex 1.4
 let rec f = function
     | 0 -> 0
-    | n -> n + f(n-1)
+    | n when n > 0 -> n + f(n-1)
+    | _ -> -1
 
 // Ex 1.5
 let rec fib = function
